@@ -1,0 +1,44 @@
+{
+  "name": "webdriver_typescript",
+  "version": "1.0.0",
+  "description": "An example project using WebdriverIO with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/typescript/lib/tsc.js && node ./node_modules/webdriverio/bin/wdio && node ./node_modules/rimraf/bin.js src",
+    "testurl": "node ./node_modules/typescript/lib/tsc.js && node ./node_modules/webdriverio/bin/wdio --baseUrl=$URL && node ./node_modules/rimraf/bin.js src",
+    "testurltimeout": "node ./node_modules/typescript/lib/tsc.js && node ./node_modules/webdriverio/bin/wdio --baseUrl=$URL --waitforTimeout=$TIMEOUT && node ./node_modules/rimraf/bin.js src",
+    "start": "selenium-standalone start",
+    "selenium": "selenium-standalone"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org:thisismygithub.git"
+  },
+  "keywords": [
+    "Selenium",
+    "Mocha",
+    "WebdriverIO"
+  ],
+  "author": "William Luce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.org:thisismygithub.git/issues"
+  },
+  "homepage": "https://bitbucket.org:thisismygithub.git#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/webdriverio": "^4.4.0",
+    "chai": "^3.5.0",
+    "rimraf": "^2.5.4",
+    "typescript": "^2.0.6",
+    "wdio-mocha-framework": "^0.5.7",
+    "selenium-standalone": "^5.9.1",
+    "chromedriver": "^2.41.0",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-chromedriver-service": "~0.1",
+    "wdio-iedriver-service": "~0.1",
+    "webdriverio": "^4.13.0",
+    "wdio-junit-reporter": "^0.4.4"
+  }
+}
